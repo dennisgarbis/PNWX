@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgba(2, 117, 2, 0.952);
+}
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: thin solid black;
+    background-color: #B6D7A8;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    background-color: white;
+}
+.rt-header {
+    display: flex;
+    justify-content: flex-end;
+}
+hr {
+    height: 3px;
+    background-color: green;
+    border: none;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 50px 50px 100px 50px;
+}
+
+.nav-links a {
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: darkgreen;
+    font-size: 24px;
+    color: white;
+    padding: 2px 20px 2px 20px;
+    border-radius: 10px;
+}
+.top-container {
+    display: flex;
+    margin-bottom: 5%;
+}
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 46px;
+}
+.left-top {
+    display: flex;
+    flex-direction: column;
+}
+.left-top p {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+.top-container img {
+    margin-right: 10%;
+    width: 50%;
+}
+.bottom-container {
+    background-color: #B6D7C5;
+}
+.bottom-container h3 {
+    font-size: 32px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.sales {
+    display: flex;
+}
+.sales h5 {
+    margin-bottom: 5%;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.sales img {
+    width: 50%;
+}
+.sales p {
+    margin: 5% 25% 10% 25%;
+}
+footer {
+    background-color: #CCCCCC;
+    display: flex;
+}
+footer ul {
+    list-style-type: none;
+} 
