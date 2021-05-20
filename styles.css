@@ -130,6 +130,15 @@ footer {
 .about ul {
     list-style-type: none;
 }
+.about li {
+    padding-bottom: 13px;
+    font-size: 19px;
+    font-weight: bold;
+    color: blue;
+}
+.about li a:hover {
+    text-decoration: none;
+}
 .rt-col-foot {
     display: flex;
     flex-direction: column;
@@ -137,6 +146,7 @@ footer {
 }
 .icons {
     width: 70%;
+    margin-top: 2%;
     margin-left: 10%;
     display: flex;
     justify-content: space-around;
@@ -148,5 +158,23 @@ footer {
     margin-top: 50px;
     margin-bottom: 0px;
     margin-left: 10%;
+    font-size: 18px;
     font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+#wrapper {
+    width: 95%;
+}
+.top-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.top-container img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+}
+.left-top p {
+    margin: 5% 15% 10% 15%;
+}
 }
