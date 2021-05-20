@@ -231,12 +231,13 @@ nav {
 }
 .top-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 5%;
 }
 .top-container img {
     margin-right: 10%;
-    width: 55%;
+    margin-bottom: 5%;
+    width: 85%;
 }
 .section {
     font-family: Georgia;
@@ -266,6 +267,8 @@ h1 {
 .left-top {
     display: flex;
     flex-direction: column;
+    width: 40%;
+    align-items: center;
 }
 form {
     margin-top: 3%;
@@ -283,6 +286,14 @@ form {
     margin-left: 3%;
     padding: 10px;
     border-radius: 10px;
+}
+.right-top {
+    width: 70%;
+}
+.right-top p {
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: 18px;
 }
 .bottom-container {
     background-color: #B6D7C5;
