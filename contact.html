@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>PNWX Update</title>
 </head>
 
@@ -60,48 +60,64 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Sales</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="section"><a href="#bottom-container">Sections..</a></div>
+        <div class="section"><a href="#bottom-container">Location, Hours, etc..</a></div>
         <div class="top-container">
             <div class="left-top">
-                <h1>Products</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea dolore asperiores dignissimos perspiciatis
-                error ullam nostrum expedita saepe eius fugit, iste iure voluptatum ad numquam adipisci obcaecati enim
-                provident. Facere! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sequi natus, quasi, tempor.</p>
-            </div>
-            <img src="images/products.jpg" alt="x-ray Machine">
+                <h1>Contact Us</h1>
+                <form class="contact-form" action="process.php" method="post">
+                    <div class="form">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" placeholder="John" required><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" placeholder="Smith" required><br>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" placeholder="847-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                        <label for="yourEmail">Email:</label>
+                        <input type="email" id="yourEmail" placeholder="example@gmail.com" required><br>
+                        <label for="reason">Subject:</label>
+                        <select name="reason" id="reason" required>
+                            <option value="">Equipment</option>
+                            <option value="wedding">Accessories</option>
+                            <option value="specialty">Vests</option>
+                            <option value="specials">Supplies</option>
+                            <option value="options">Parts</option>
+                            <option value="other">Other</option>
+                        </select><br>
+                        <label for="yourSubject">Subject:</label>
+                        <input type="text" id="yourSubject" value=""><br>
+                        <label>Your Message:</label>
+                        <textarea id="yourMessage" name="yourMessage" rows="8" cols="50">
+                                    </textarea>
+                    </div>
+                    <br />
+                    <input type="checkbox" id="submit" name="submit" value="">
+                    <label for="submit"> Yes, please add my email address to the PNWX mailing list</label><br>
+                    <div class="prefer">
+                        <p class="span"><span class="preferred">Preferred contact?</span></p>
+                        <input type="radio" id="phoneNumber" name="choice" required>
+                        <label for="phoneNumber">Phone</label><br>
+                        <input type="radio" id="email" name="choice">
+                        <label for="email">Email</label><br>
+                        <input type="radio" id="neither" name="choice">
+                        <label for="neither">Neither</label><br>
+                    </div>
+                    <input class="submit" type="submit" name="submit"><br>
+                
+                </form>
+            </div>            
+        <img src="images/pnwx-building.jpg" alt="PNWX Building">
         </div>
         <hr>
+        
+        
         <div id="bottom-container" class="bottom-container">
-            <div class="top-half">
-                <div class="equipment">
-                    <h3>Equipment</h3>
-                    <a href="https://youtu.be/_KUmCNmpLeA" target="_blank"><img src="images/x-ray_machine.jpg" alt="x-ray machine"></a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, illum explicabo? Nisi magni sint fugiat ut quas consequatur aliquam rerum quos inventore maxim.</p>
-                </div>
-                <div class="supplies">
-                    <h3>Supplies</h3>
-                    <a href="https://youtu.be/gRDJwA1fPn4" target="_blank"><img src="images/x-ray_supplies.jpg" alt="supplies"></a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, illum explicabo? Nisi magni sint fugiat ut quas consequatur aliquam rerum quos inventore maxim.</p>
-                </div>
-            </div>
-            <div class="bottom-half">
-                <div class="accessories">
-                    <h3>Accessories</h3>
-                    <a href="https://youtu.be/EJyqtrofCos" target="_blank"><img src="images/x-ray_accessories.jfif" alt="accessories"></a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, illum explicabo? Nisi magni sint fugiat ut quas consequatur aliquam rerum quos inventore maxim.</p>
-                </div>
-                <div class="parts">
-                    <h3>Parts</h3>
-                    <a href="https://youtu.be/qcXLLxDZ1lA" target="_blank"><img src="images/x-ray_parts.jpg" alt="parts"></a>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, illum explicabo? Nisi magni sint fugiat ut quas consequatur aliquam rerum quos inventore maxim.</p>
-                </div>
-            </div>
+            <h2>map will go here, and hours, and address</h2>
         </div>
         <hr>
         <footer>

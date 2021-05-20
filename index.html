@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>PNWX Update</title>
 </head>
 
@@ -16,9 +16,41 @@
             <img src="images/pnwx-logo.png" alt="logo">
         </div>
         <div class="rt-header">
-            <a href="#">Log In</a>
-            <div class="vl"></div>
-            <a href="#">Sign Up</a>
+            
+            <button class="open-button" onclick="openForm()">Log In</button>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Login</h1>
+              
+                  <label for="email"><b>Email:</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password:</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            
+              <div class="vl"></div>
+            
+            <button class="open-sign" onclick="signUp()">Sign Up</button>
+            <div class="sign-popup" id="mySign">
+                <form action="/action_page.php" class="form-sign">
+                  <h1>Sign Up!</h1>
+              
+                  <label for="name"><b>Name:</b></label>
+                  <input type="text" placeholder="Enter Your Name" name="name" required>
+                  <label for="email"><b>Email:</b></label>
+                  <input type="email" placeholder="Enter Email" name="email" required>
+                  <label for="phone"><b>Phone Number:</b></label>
+                  <input type="tel" placeholder="555-555-5555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                  <button type="submit" class="btn">Sign Up</button>
+                  <button type="button" class="btn cancel" onclick="closeSign()">Cancel</button>
+                </form>
+              </div>
+            
             <img src="images/help.png" alt="help icon">
             <input type="">
             <img class="cart" src="images/cart.png" alt="cart">
@@ -32,7 +64,7 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Sales</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="top-container">
@@ -51,26 +83,22 @@
                 <div class="vests">
                 <h5>X-ray Vests</h5>
             <a href="https://youtu.be/rfKPb5ibiy8" target="_blank"><img src="images/vest2.jpg" alt="vest image"></a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae perspiciatis nesciunt iusto in cum
-                beatae consectetur.</p>
+            <p>Latest and greatest deals on x-ray vests on sale.</p>
                 </div>
                 <div class="gels">
-            <h5>Gels</h5>
-            <a href="https://youtu.be/LmG-ErzZsUQ" target="_blank"><img src="images/gel.jpg" alt="gels"></a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae perspiciatis nesciunt iusto in cum
-                beatae consectetur.</p>
+            <h5>Glasses</h5>
+            <a href="https://youtu.be/83M4wlHo5aQ" target="_blank"><img src="images/glasses.jpg" alt="glasses"></a>
+            <p>Protect your eyes with our radiation protection glasses, now on sale!!!</p>
                 </div>
                 <div class="wheelchairs">
             <h5>Wheelchairs</h5>
             <a href="https://youtu.be/dC_wTDfdyek" target="_blank"><img src="images/wheelchair.jpg" alt="Wheelchairs"></a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae perspiciatis nesciunt iusto in cum
-                beatae consectetur.</p>
+            <p>Super-fast, lightweight and aerodynamic wheelchairs, now at 10% off msrp!</p>
                 </div>
                 <div class="earplugs">
             <h5>MRI Earplugs</h5>
             <a href="https://youtu.be/ZzbKJEFULio" target="_blank"><img src="images/MRI.jpg" alt="MRI Earplugs"></a>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae perspiciatis nesciunt iusto in cum
-                beatae consectetur.</p>
+            <p>Save on MRI ear plugs when you purchase them in bulk!!</p>
                 </div>
             </div>
         </div>
@@ -100,6 +128,22 @@
         </footer>
     </main>
     </div>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+
+        function signUp() {
+            document.getElementById("mySign").style.display = "block";
+        }
+        function closeSign() {
+            document.getElementById("mySign").style.display = "none";
+        }
+        </script>
 </body>
 
 </html>
