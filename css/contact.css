@@ -213,6 +213,7 @@ nav {
     font-size: 24px;
     color: white;
     padding: 2px 20px 2px 20px;
+    box-shadow: 2px 2px 4px black;
     border-radius: 10px;
 }
 .nav-links a:hover {
@@ -270,11 +271,22 @@ h1 {
     width: 40%;
     align-items: center;
 }
-form {
-    margin-top: 3%;
+form .form {
     font-size: 17px;
+    width: 80%;
+    margin: 0 auto;
 }
-
+.form label, input {
+    display: inline-block;
+}
+label {
+    width: 30%;
+    text-align: right;
+}
+label+input {
+    width: 30%;
+    margin: 0 10% 0 4%;
+}
 .contact-form input {
     padding: 10px;
     border-radius: 10px;
@@ -283,9 +295,35 @@ form {
 }
 #reason {
     margin-bottom: 15px;
-    margin-left: 3%;
+    margin: 0 18% 0 4%;
     padding: 10px;
     border-radius: 10px;
+}
+.message {
+    padding-top: 4%;
+    padding-bottom: 2%;
+    margin-right: 70%;
+}
+.prefer {
+
+}
+.submit {
+    border: 1px solid #000000;
+    background-color: #0A9009;
+    color: white;
+    font-family: georgia;
+    font-size: 19px;
+    box-shadow: 2px 2px 5px black;
+    margin-top: 20px;
+}
+.submit:hover {
+    background-color: blue;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+.submit:hover:active {
+    background-color: black;
+    box-shadow: 1px 1px 3px black;
 }
 .right-top {
     width: 70%;

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
-    <title>PNWX Update</title>
+    <title>PNWX Dennis's Update</title>
 </head>
 
 <body>
@@ -77,25 +77,24 @@
                         <label for="lname">Last Name:</label>
                         <input type="text" id="lname" placeholder="Smith" required><br>
                         <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" placeholder="847-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                        <input type="tel" id="phone" placeholder="8475555555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
                         <label for="yourEmail">Email:</label>
                         <input type="email" id="yourEmail" placeholder="example@gmail.com" required><br>
                         <label for="reason">Subject:</label>
                         <select name="reason" id="reason" required>
-                            <option value="">Equipment</option>
+                            <option value="">select one</option>
                             <option value="wedding">Accessories</option>
                             <option value="specialty">Vests</option>
                             <option value="specials">Supplies</option>
                             <option value="options">Parts</option>
                             <option value="other">Other</option>
                         </select><br>
-                        <label>Your Message:</label>
-                        <textarea id="yourMessage" name="yourMessage" rows="8" cols="50">
-                                    </textarea>
+                        <label class="message">Your Message:</label>
+                        <textarea id="yourMessage" name="yourMessage" rows="8" cols="50"></textarea>
                     </div>
                     <br />
                     <input type="checkbox" id="submit" name="submit" value="">
-                    <label for="submit"> Yes, please add my email address to the PNWX mailing list</label><br>
+                    <label class="mailing" for="submit"> Yes, please add my email address to the PNWX mailing list</label><br>
                     <div class="prefer">
                         <p class="span"><span class="preferred">Preferred contact?</span></p>
                         <input type="radio" id="phoneNumber" name="choice" required>
@@ -119,7 +118,11 @@
         
         
         <div id="bottom-container" class="bottom-container">
-            <h2>map will go here, and hours, and address</h2>
+            <h3>Our Address</h3>
+            <p>P.O. Box 625</p>
+            <p>Gresham, OR 97030</p>
+            <h3>Our Location</h3>
+            <h3>Hours of Operation</h3>
         </div>
         <hr>
         <footer>

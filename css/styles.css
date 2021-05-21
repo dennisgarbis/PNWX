@@ -208,14 +208,19 @@ nav {
     font-size: 24px;
     color: white;
     padding: 2px 20px 2px 20px;
+    box-shadow: 2px 2px 4px black;
     border-radius: 10px;
 }
 .nav-links a:hover {
-    background-color: #112693;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.455);
+    background-color: blue;
+    opacity: .7;
+    box-shadow: 5px 5px 5px #000000;
 }
 .nav-links a:active {
-    background-color: black;
+    background-color: blue;
+    opacity: 1;
+    box-shadow: 1px 1px black;
+    transform: translateY(5px);
 }
 .nav-links .active {
     background-color: #112693;
@@ -263,11 +268,17 @@ h1 {
     font-size: 24px;
     text-decoration: underline;
 }
+.sales img {
+    border: 1px solid black;
+
+}
 .sales img:hover {
     opacity: .8;
-    border: 1px solid black;
     box-shadow: 5px 5px rgba(70, 67, 67, 0.386);
-    transform: scale(1.01);
+}
+.sales img:active {
+    transform:translateY(5px);
+    box-shadow: 2px 2px 5px black;
 }
 .sales p {
     margin: 5% 25% 10% 25%;
